@@ -1,0 +1,11 @@
+spark:
+  app_name: DataTrainer
+  master: local[*]
+spark_ml:
+  training_data_path: ./data/covidData.csv
+  ready_models_path: ./ready_models/
+ml_flow:
+  tracking_uri: http://mlflow:5000
+  experiment_name: CovidExperiment
+  model_name: CovidModel
+  artifact_tmp_path: ./tmp_mlflow_files
